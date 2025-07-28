@@ -5,8 +5,9 @@ export default function NavbarUser() {
 
   const logout = () => {
   localStorage.clear();
-  window.location.href = '/'; // Forces redirect to login page
+  window.location.href = '/#/login';
 };
+
 
 
   return (
