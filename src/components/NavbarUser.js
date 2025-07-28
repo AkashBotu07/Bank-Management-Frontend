@@ -4,9 +4,10 @@ export default function NavbarUser() {
   const navigate = useNavigate();
 
   const logout = () => {
-    localStorage.clear();
-    navigate('/login');
-  };
+  localStorage.clear();
+  window.location.href = '/'; // Forces redirect to login page
+};
+
 
   return (
     <nav className="navbarUser">
